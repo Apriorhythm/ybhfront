@@ -1,0 +1,42 @@
+
+.main-body{
+	width:320px;
+	height: 470px;
+	border: 1px solid gray;
+	margin:auto;
+	text-align: center;
+}
+.inp{
+	width: 200px;
+	
+}
+.min-input{
+	width: 100px;
+	
+}
+.a1{
+	width: 320px;
+	height: 10px;
+	text-align:left;
+}
+.mdiv{
+	margin: 10px 10px 10px 0px;
+}
+.di{
+	width:320px;
+	height: 40px;
+	border-bottom: 1px solid gray;
+}
+.bn1{
+	background-color: gainsboro;}
+.zc{
+	height: 30px;
+	font-size: 15px;
+	font-family: "微软雅黑";
+	
+}
+.a2{
+	text-align: left;
+	color: #269ABC;
+	font-weight: 600;
+}
