@@ -29,7 +29,11 @@
 
 	<servlet-mapping>
 		<servlet-name>springmvc</servlet-name>
-		<url-pattern>/*</url-pattern>
+		<url-pattern>/</url-pattern>
+		<!--
+            /*强迫所有的请求及响应都经过该servlet； 
+            /将使你配置的servlet成为默认的servlet。
+        -->
 	</servlet-mapping>
 
 

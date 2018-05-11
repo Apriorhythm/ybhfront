@@ -44,21 +44,81 @@
         <property  name="enableSubPackages"  value="true"/>
     </javaClientGenerator>
 
+ <!-- 
+   <table  tableName="FreeHost_Admuser"  domainObjectName="Admuser"></table>
+   <table  tableName="FreeHost_Agent"  domainObjectName="Agent"></table>
+   <table  tableName="FreeHost_Agent_ALLdomain"  domainObjectName="Agent_ALLdomain"></table>
+   <table  tableName="FreeHost_Agent_domain"  domainObjectName="Agent_domain"></table>
+   <table  tableName="FreeHost_Agent_pers"  domainObjectName="Agent_pers"></table>
+   <table  tableName="FreeHost_Agent_price"  domainObjectName="Agent_price"></table>
+   <table  tableName="FreeHost_Agent_user_price"  domainObjectName="Agent_user_price"></table>
+   <table  tableName="FreeHost_AgentRaR"  domainObjectName="AgentRaR"></table>
+   <table  tableName="FreeHost_CDN_analog"  domainObjectName="CDN_analog"></table>
+   <table  tableName="FreeHost_CDNProductlist"  domainObjectName="CDNProductlist"></table>
+   <table  tableName="FreeHost_CDNProductlist_AGN"  domainObjectName="CDNProductlist_AGN"></table>
+   <table  tableName="FreeHost_DomainProductlist"  domainObjectName="DomainProductlist"></table>
+   <table  tableName="FreeHost_DomainProductlist_AGN"  domainObjectName="DomainProductlist_AGN"></table>
+   <table  tableName="FreeHost_EmailProductlist"  domainObjectName="EmailProductlist"></table>
+   <table  tableName="FreeHost_EmailProductlist_AGN"  domainObjectName="EmailProductlist_AGN"></table>
+   <table  tableName="FreeHost_Fapiao"  domainObjectName="Fapiao"></table>
+   <table  tableName="FreeHost_Functionlog"  domainObjectName="Functionlog"></table>
+   <table  tableName="FreeHost_HostProductlist"  domainObjectName="HostProductlist"></table>
+   <table  tableName="FreeHost_HostProductlist_AGN"  domainObjectName="HostProductlist_AGN"></table>
+   <table  tableName="FreeHost_HtmlStyle"  domainObjectName="HtmlStyle"></table>
+   <table  tableName="FreeHost_ICPDB"  domainObjectName="ICPDB"></table>
+   <table  tableName="FreeHost_IDCIP"  domainObjectName="IDCIP"></table>
+   <table  tableName="FreeHost_IDCJG"  domainObjectName="IDCJG"></table>
+   <table  tableName="FreeHost_IDCProductlist"  domainObjectName="IDCProductlist"></table>
+   <table  tableName="FreeHost_IDCProductlist_AGN"  domainObjectName="IDCProductlist_AGN"></table>
+   <table  tableName="FreeHost_KeFu"  domainObjectName="KeFu"></table>
+   <table  tableName="FreeHost_Loginlog"  domainObjectName="Loginlog"></table>
+   <table  tableName="FreeHost_Moneylog"  domainObjectName="Moneylog"></table>
+   <table  tableName="FreeHost_NetCNProductlist"  domainObjectName="NetCNProductlist"></table>
+   <table  tableName="FreeHost_NetCNProductlist_AGN"  domainObjectName="NetCNProductlist_AGN"></table>
+   <table  tableName="FreeHost_Netpay"  domainObjectName="Netpay"></table>
+   <table  tableName="FreeHost_News"  domainObjectName="News"></table>
+   <table  tableName="FreeHost_online_aws"  domainObjectName="online_aws"></table>
+   <table  tableName="FreeHost_oplog"  domainObjectName="oplog"></table>
+   <table  tableName="FreeHost_Order"  domainObjectName="Order"></table>
+   <table  tableName="FreeHost_OtherProductlist"  domainObjectName="OtherProductlist"></table>
+   <table  tableName="FreeHost_OtherProductlist_AGN"  domainObjectName="OtherProductlist_AGN"></table>
+   <table  tableName="FreeHost_Preopen_Product"  domainObjectName="Preopen_Product"></table>
+   <table  tableName="FreeHost_Product_ALLDNS"  domainObjectName="Product_ALLDNS"></table>
+   <table  tableName="FreeHost_Product_ALLEmail"  domainObjectName="Product_ALLEmail"></table>
+   <table  tableName="FreeHost_Product_CDN"  domainObjectName="Product_CDN"></table>
+   <table  tableName="FreeHost_Product_Domain"  domainObjectName="Product_Domain"></table>
+   <table  tableName="FreeHost_Product_Email"  domainObjectName="Product_Email"></table>
+   <table  tableName="FreeHost_Product_Host"  domainObjectName="Product_Host"></table>
+   <table  tableName="FreeHost_Product_Host_IP"  domainObjectName="Product_Host_IP"></table>
+   <table  tableName="FreeHost_Product_IDC"  domainObjectName="Product_IDC"></table>
+   <table  tableName="FreeHost_Product_IDC_repair"  domainObjectName="Product_IDC_repair"></table>
+   <table  tableName="FreeHost_Product_NetCN"  domainObjectName="Product_NetCN"></table>
+   <table  tableName="FreeHost_Product_Other"  domainObjectName="Product_Other"></table>
+   <table  tableName="FreeHost_Product_Sql"  domainObjectName="Product_Sql"></table>
+   <table  tableName="FreeHost_Product_URLRE"  domainObjectName="Product_URLRE"></table>
+   <table  tableName="FreeHost_Product_VPS"  domainObjectName="Product_VPS"></table>
+   <table  tableName="FreeHost_Product_VPS_ACL"  domainObjectName="Product_VPS_ACL"></table>
+   <table  tableName="FreeHost_Product_VPS_ACLTemplate"  domainObjectName="Product_VPS_ACLTemplate"></table>
+   <table  tableName="FreeHost_Product_VPS_ADSL"  domainObjectName="Product_VPS_ADSL"></table>
+   <table  tableName="FreeHost_Product_VPS_IP"  domainObjectName="Product_VPS_IP"></table>
+   <table  tableName="FreeHost_ServerBindlist"  domainObjectName="ServerBindlist"></table>
+   <table  tableName="FreeHost_ServerCDNlist"  domainObjectName="ServerCDNlist"></table>
+   <table  tableName="FreeHost_ServerDNSlist"  domainObjectName="ServerDNSlist"></table>
+   <table  tableName="FreeHost_Serveremaillist"  domainObjectName="Serveremaillist"></table>
+   <table  tableName="FreeHost_Serverlist"  domainObjectName="Serverlist"></table>
+   <table  tableName="FreeHost_ServerPORTlist"  domainObjectName="ServerPORTlist"></table>
+   <table  tableName="FreeHost_Serversqllist"  domainObjectName="Serversqllist"></table>
+   <table  tableName="FreeHost_ServerVPSlist"  domainObjectName="ServerVPSlist"></table>
+   <table  tableName="FreeHost_SqlProductlist"  domainObjectName="SqlProductlist"></table>
+   <table  tableName="FreeHost_SqlProductlist_AGN"  domainObjectName="SqlProductlist_AGN"></table>
+   <table  tableName="FreeHost_System_Info"  domainObjectName="System_Info"></table>
+   
+   -->
+   
+   
+   <table  tableName="FreeHost_USER"  domainObjectName="USER"></table>
  
-   <table  tableName="FreeHost_USER"  domainObjectName="User"></table>
- 
-<!-- 
-    <table  tableName="FreeHost_USER"  domainObjectName="User" 
-        enableCountByExample="true"   enableUpdateByExample="true" 
-        enableDeleteByExample="false"  enableSelectByExample="true" 
-        selectByExampleQueryId="true">
-      <generatedKey  column="ID"  sqlStatement="selectuuid_short()" identity="false"/>
-    </table>
-      
- -->
 
-
-      
    </context>
 
 </generatorConfiguration>

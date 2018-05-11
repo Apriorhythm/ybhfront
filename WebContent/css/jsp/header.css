@@ -1,0 +1,60 @@
+.navbar{
+	border-radius: 0;
+}
+
+#header{
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.dark-moar {
+  background-color: #161616;
+  color: #666666;
+  background-color: #0a0a0a;
+}
+.dark-moar a {
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+  color: #a6a6a6;
+}
+.dark-moar a:hover,
+.dark-moar a:active {
+  color: #f2f2f2;
+  text-decoration: none;
+}
+
+
+
+
+#myCarousel {
+    margin: 50px 0 0 0;
+}
+
+
+.carousel-inner img{
+    margin: 0 auto;
+}
+
+
+
+@media screen and (min-width: 768px) {
+  #footer-copyright {
+    padding: 0px 50px;
+    font-size: 15px;
+    line-height: 14px;
+  }
+}
+@media screen and (min-width: 992px) {
+  #footer-copyright {
+    padding: 0px;
+  }
+}
+@media screen and (min-width: 768px) {
+  #footer-copyright .col {
+    width: 19.5%;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
