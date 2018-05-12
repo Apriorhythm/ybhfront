@@ -1,11 +1,21 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
  
+ <%@ include file="/commons/taglibs.jsp" %>
+ <%@ include file="/commons/meta.jsp" %>
+ <%@ include file="/commons/tooltip.jsp" %>
+ 
 <!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<link type="text/css" rel="stylesheet" href="${ctx}/css/jsp/header.css">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	
+	<link type="text/css" rel="stylesheet" href="${ctx}/css/jsp/header.css">
+		
+    <script src="${ctx}/js/tools/base64.js"></script>
+    <script src="${ctx}/js/jsp/header.js"></script>
+
 
 <title>云保护</title>
 </head>
@@ -45,10 +55,10 @@
 
                 </ul>
 
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#" data-toggle="modal" data-target="#loginModal">登录</a></li>
+                <ul id="loginAndRegister" class="nav navbar-nav navbar-right">
+                    <li><a href="#" data-toggle="modal" data-target="#login-modal">登录</a></li>
                     
-                    <li><a  href="/FrontPages/register.asp">注册</a></li>
+                    <li><a  href="${ctx}/user/register">注册</a></li>
                     
                 </ul>
 
@@ -59,45 +69,27 @@
 
 
 	<!-- 模态框（Modal） -->
-	<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-	    <div class="modal-dialog">
-	        <div class="modal-content">
-	            <div class="modal-header">
-	                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-	                    &times;
-	                </button>
-	                <h4 class="modal-title" id="myModalLabel">欢迎登录</h4>
-	            </div>
-	            <div class="modal-body">
-	            
-	            
-	            
-	            
+	<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+		<div class="modal-dialog">
+		      <div class="loginmodal-container">
+		        <h1>登录</h1><br>
+		        <form>
+		          <input type="text" id="username" name="username" placeholder="用户名">
+		          <input type="password" id="password" name="password" placeholder="密码">
+		          <input type="button" id="loginSubmit" name="login" class="login loginmodal-submit" value="登录">
+		        </form>
+		          
+		        <div class="login-help">
+		          <a href="#">注册</a> - <a href="#">忘记密码</a>
+		        </div>
+		      </div>
+		  </div>
+	</div>
 
-	            
-				    <form id="gof" name="gof" onSubmit="return checklogin(this)" action="/user/userlogin.asp" method="post">
-				        <div>
-				            <div class="input-group">
-				                <span class="input-group-addon" id="basic-addon1">账号</span>
-				                <input id="username" name="username" type="text" class="form-control" placeholder="账号" aria-describedby="basic-addon1">
-				            </div>
-				
-				            <div class="input-group">
-				                <span class="input-group-addon" id="basic-addon1">密码</span>
-				                <input id="password" name="password" type="password" class="form-control" placeholder="密码" aria-describedby="basic-addon1">
-				            </div>
-				        </div>
-			
-				    </form>
-				    
-	            </div>
-	            <div class="modal-footer">
-	                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-	                <button type="button" class="btn btn-primary">登录</button>
-	            </div>
-	        </div><!-- /.modal-content -->
-	    </div><!-- /.modal -->
-    </div>
+
+
+
+
 
 
 </body>

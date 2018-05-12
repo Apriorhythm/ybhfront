@@ -1,10 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8" isELIgnored="false"%>
 <!DOCTYPE html>
-
- <%@ include file="/commons/taglibs.jsp" %>
- <%@ include file="/commons/meta.jsp" %>
- <%@ include file="/commons/tooltip.jsp" %>
+ 
+  <%@ include file="/commons/header.jsp" %>
  
 <html>
 <head>
@@ -15,7 +13,6 @@
     
 </head>
 <body>
- <%@ include file="/commons/header.jsp" %>
 
 
 
