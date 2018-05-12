@@ -1,0 +1,25 @@
+
+#footer-copyright {
+  font-size: 15px;
+  line-height: 39px;
+  margin: 15px;
+}
+@media screen and (min-width: 768px) {
+  #footer-copyright {
+    padding: 0px 50px;
+    font-size: 15px;
+    line-height: 14px;
+  }
+}
+@media screen and (min-width: 992px) {
+  #footer-copyright {
+    padding: 0px;
+  }
+}
+@media screen and (min-width: 768px) {
+  #footer-copyright .col {
+    width: 19.5%;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
